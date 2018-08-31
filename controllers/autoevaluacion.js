@@ -9,9 +9,6 @@ const config = require('../config')
 function getAutoevaluacion (req, res) {
     // Si el Token es válido (true), puede continuar con la petición
     if (config.token) {
-        // Almacena el parámetro 'segmento' enviado en la petición
-        const segmento = req.params.segmento
-
         // Leer BD (.json)
         var file = require("fs")
         var contAutEvalua = file.readFileSync("./DB/autoevaluacion.json")
@@ -26,7 +23,7 @@ function getAutoevaluacion (req, res) {
 
         res.status(200).send(AutEvalua)
     } else {
-        res.status(401).send("La solicitud requiere autenticación de usuario")
+        res.status(401).send({"message":"La solicitud requiere autenticación de usuario"})
     }
 }
 
@@ -56,7 +53,7 @@ function getSegAutoevaluacion (req, res) {
         else
           res.status(400).send("La solicitud no pudo ser entendida por el servidor debido a una sintaxis mal formada.")
     } else {
-        res.status(401).send("La solicitud requiere autenticación de usuario")
+        res.status(401).send({"message":"La solicitud requiere autenticación de usuario"})
     }
 }
 
@@ -98,7 +95,7 @@ function getSegUnikAutoeval (req, res) {
         } else
           res.status(400).send("La solicitud no pudo ser entendida por el servidor debido a una sintaxis mal formada.")
     } else {
-        res.status(401).send("La solicitud requiere autenticación de usuario")
+        res.status(401).send({"message":"La solicitud requiere autenticación de usuario"})
     }
 }
 
