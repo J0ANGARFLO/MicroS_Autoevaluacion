@@ -5,8 +5,8 @@
                 "nombre": "Taller 1 - Documento Visión",
                 "Fecha": "11-08-2018",
                 "modalidad": "Grupal",
-                "Integrantes": "Arturo Verbel, Edward Castañeda, José Andrés García Flórez",
-                "url_doc": "https://docs.google.com/document/d/1RS9TYuPZdgM11ffVIkxhDTK86SJ_X7mYdrYDYIC1WUw/edit",
+                "autor": "Arturo Verbel, Edward Castañeda, José Andrés García Flórez",
+                "url": "https://docs.google.com/document/d/1RS9TYuPZdgM11ffVIkxhDTK86SJ_X7mYdrYDYIC1WUw/edit",
                 "url_git": "",
                 "calificacion": 3.5
             },
@@ -14,8 +14,8 @@
                 "nombre": "Taller 2 - Microservicio TRANSMILENIO",
                 "Fecha": "18-08-2018",
                 "modalidad": "Grupal",
-                "Integrantes": "Geraldin Sanabria, Edwin Rincón, José Andrés García Flórez",
-                "url_doc": "https://docs.google.com/document/d/1O4ocJznaOFvhameThRwfcfKhyxGNfZLvY6rPCdqpqUw/edit",
+                "autor": "Geraldin Sanabria, Edwin Rincón, José Andrés García Flórez",
+                "url": "https://docs.google.com/document/d/1O4ocJznaOFvhameThRwfcfKhyxGNfZLvY6rPCdqpqUw/edit",
                 "url_git": "https://github.com/J0ANGARFLO/consultar_tarjeta",
                 "calificacion": 4.5
             },
@@ -23,8 +23,8 @@
                 "nombre": "Taller 3 - Contenedores y Virtualización",
                 "Fecha": "24-08-2018",
                 "modalidad": "Grupal",
-                "Integrantes": "Arturo Verbel, Edward Castañeda, José Andrés García Flórez",
-                "url_doc": "https://docs.google.com/document/d/1zxUhJqK9vAkDUmXNSD2mDFxgaHEye0mzyiezdYa5Ehc/edit",
+                "autor": "Arturo Verbel, Edward Castañeda, José Andrés García Flórez",
+                "url": "https://docs.google.com/document/d/1zxUhJqK9vAkDUmXNSD2mDFxgaHEye0mzyiezdYa5Ehc/edit",
                 "url_git": "",
                 "calificacion": 5.0
             }
