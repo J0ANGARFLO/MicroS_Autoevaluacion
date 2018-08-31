@@ -3,9 +3,12 @@
 const express = require('express')
 const aEvaluacionCtrl = require('../controllers/autoevaluacion')
 const api = express.Router()
+const cors = require('cors')
+
+api.use(cors())
 
 /**
-* @api {get} api/services/autoevaluacion/:segmento Obtener todo el conjunto de la autoevaluación
+* @api {get} /services/autoevaluacion Obtener todo el conjunto de la autoevaluación
 * @apiVersion 1.0.0
 * @apiName GetAutoevaluacion
 * @apiGroup Services
@@ -51,7 +54,7 @@ const api = express.Router()
 api.get('/services/autoevaluacion', aEvaluacionCtrl.getAutoevaluacion)
 
 /**
-* @api {get} api/services/autoevaluacion/:segmento Obtener autoevaluación de un segmento concreto
+* @api {get} /services/autoevaluacion/:segmento Obtener autoevaluación de un segmento concreto
 * @apiVersion 1.0.0
 * @apiName GetSegAutoevaluacion
 * @apiGroup Services
@@ -88,14 +91,14 @@ api.get('/services/autoevaluacion', aEvaluacionCtrl.getAutoevaluacion)
 api.get('/services/autoevaluacion/:segmento', aEvaluacionCtrl.getSegAutoevaluacion)
 
 /**
-* @api {get} api/services/autoevaluacionUnik/:segmento Obtener autoevaluación de un unico Trabajo/Blog de un segmento concreto
+* @api {get} /services/autoevaluacionUnik/:segmento Obtener autoevaluación de un unico Trabajo/Blog de un segmento concreto
 * @apiVersion 1.0.0
 * @apiName GetSegUnikAutoeval
 * @apiGroup Services
 * @apiPermission Token de autorización
 *
-* @apiParam {String} segmento La categoría a consultar. Valores permitidos: talleres, blogs
-* @apiParam {String} nombre Texto por el cual se buscara el Trabajo/blog
+* @apiParam {String} [segmento] La categoría a consultar. Valores permitidos: talleres, blogs
+* @apiParam {String} [nombre] Texto por el cual se buscara el Trabajo/blog
 *
 * @apiExample {js} Ejemplo de uso:
 * http://localhost:5000/api/services/autoevaluacionUnik/blogs?nombre=Blog 3
