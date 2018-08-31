@@ -1,36 +1,37 @@
 {
-  "name": "micros_autoevaluacion",
-  "version": "1.0.0",
-  "description": "Microservicio que entrega las notas de la autoevaluación hasta este corte (Talleres y Blogs). REST creado con Node JS.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/J0ANGARFLO/MicroS_Autoevaluacion.git"
-  },
-  "keywords": [
-    "Microservicio",
-    "Servicio",
-    "Nube",
-    "Node",
-    "JS",
-    "apiDoc",
-    "API",
-    "REST"
-  ],
-  "author": "José Andrés García Flórez - joagaflo@gmail.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/J0ANGARFLO/MicroS_Autoevaluacion/issues"
-  },
-  "homepage": "https://github.com/J0ANGARFLO/MicroS_Autoevaluacion#readme",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.4"
-  }
+    "name": "micros_autoevaluacion",
+    "version": "1.0.0",
+    "description": "Microservicio que entrega las notas de la autoevaluación hasta este corte (Talleres y Blogs). REST creado con Node JS.",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/J0ANGARFLO/MicroS_Autoevaluacion.git"
+    },
+    "keywords": [
+        "Microservicio",
+        "Servicio",
+        "Nube",
+        "Node",
+        "JS",
+        "apiDoc",
+        "API",
+        "REST"
+    ],
+    "author": "José Andrés García Flórez - joagaflo@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/J0ANGARFLO/MicroS_Autoevaluacion/issues"
+    },
+    "homepage": "https://github.com/J0ANGARFLO/MicroS_Autoevaluacion#readme",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.4"
+    }
 }
